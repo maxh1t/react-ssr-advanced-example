@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --link-color: #0078d4;
+  --link-hover-color: #0056a3;
+}
+
+:root.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #f0f0f0
+}
+
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--link-color);
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--link-hover-color);
+}
+
+nav .settings {
+  display: flex;
+  gap: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--link-color);
+  border-radius: 8px;
+  background-color: var(--bg-color);
+}
+
+.post h4 {
+  font-size: 1.2rem;
+}
+
+.loading {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
