@@ -14,6 +14,7 @@ export default tseslint.config({ ignores: ['dist'] }, pluginReact.configs.flat.r
     ecmaVersion: 2020,
     globals: globals.browser,
   },
+  settings: { react: { version: 'detect' } },
   plugins: {
     'react-hooks': reactHooks,
     'react-refresh': reactRefresh,
