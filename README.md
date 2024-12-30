@@ -1,7 +1,8 @@
 # React SSR Advanced Example
 
-An example of a server-side rendered (SSR) React application. This project demonstrates advanced features for modern
-SSR:
+An example of a server-side rendered (SSR) React application. 
+
+This project demonstrates advanced features for modern SSR:
 
 - Streaming
 - Lazy Loaded Pages
